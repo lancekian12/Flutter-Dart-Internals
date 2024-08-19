@@ -1,20 +1,20 @@
 import 'package:flutter/material.dart';
 
 class DemoButton extends StatefulWidget {
-  DemoButton({super.key});
+  const DemoButton({super.key});
+
   @override
   State<DemoButton> createState() {
-    return _DemoButtonState();
+    return _DemoButtonsState();
   }
 }
 
-class _DemoButtonState extends State<DemoButton> {
+class _DemoButtonsState extends State<DemoButton> {
   var _isUnderstood = false;
 
   @override
   Widget build(BuildContext context) {
-    print('UIUpdatesDemo BUILD called');
-
+    print('DemoButtons BUILD called');
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
